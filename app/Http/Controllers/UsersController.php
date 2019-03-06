@@ -73,6 +73,7 @@ class UsersController extends Controller
         return response()->json($user);
     }
 
+    
     public function destroy(Request $request, User $user)
     {
         $userId = $user->getAttribute('id');
